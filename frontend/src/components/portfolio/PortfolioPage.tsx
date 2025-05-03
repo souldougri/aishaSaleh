@@ -91,7 +91,7 @@ const dummyArticles = [
 
 const PortfolioPage = () => {
   const { t } = useTranslation();
-  const [articles, setArticles] = useState(dummyArticles);
+  const [articles] = useState(dummyArticles);
   const [filteredArticles, setFilteredArticles] = useState(dummyArticles);
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');

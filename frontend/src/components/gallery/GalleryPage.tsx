@@ -165,7 +165,7 @@ const dummyGalleryImages = [
 
 const GalleryPage = () => {
   const { t } = useTranslation();
-  const [images, setImages] = useState(dummyGalleryImages);
+  const [images] = useState(dummyGalleryImages);
   const [filteredImages, setFilteredImages] = useState(dummyGalleryImages);
   const [activeCategory, setActiveCategory] = useState('All');
   const [isLoading, setIsLoading] = useState(false);

@@ -80,7 +80,7 @@ const dummyArticles = [
 const ArticleDetail = () => {
   const { t } = useTranslation();
   const { slug } = useParams<{ slug: string }>();
-  const navigate = useNavigate();
+  // const navigate = useNavigate(); // Will be used for future navigation features
   const [article, setArticle] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

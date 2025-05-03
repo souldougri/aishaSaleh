@@ -12,7 +12,8 @@ const GalleryFilter: React.FC<GalleryFilterProps> = ({
   activeCategory,
   setActiveCategory,
 }) => {
-  const { t } = useTranslation();
+  // Translation will be used in future updates
+  // const { t } = useTranslation();
 
   return (
     <div className="mb-12">

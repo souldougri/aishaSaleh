@@ -19,7 +19,8 @@ interface GalleryModalProps {
 }
 
 const GalleryModal: React.FC<GalleryModalProps> = ({ image, closeModal }) => {
-  const { t } = useTranslation();
+  // Translation will be used in future updates
+  // const { t } = useTranslation();
 
   // Close modal on escape key press
   useEffect(() => {
@@ -28,9 +29,9 @@ const GalleryModal: React.FC<GalleryModalProps> = ({ image, closeModal }) => {
         closeModal();
       }
     };
-    
+
     window.addEventListener('keydown', handleEsc);
-    
+
     return () => {
       window.removeEventListener('keydown', handleEsc);
     };
@@ -61,7 +62,7 @@ const GalleryModal: React.FC<GalleryModalProps> = ({ image, closeModal }) => {
           >
             <FaTimes />
           </button>
-          
+
           {/* Image */}
           <div className="md:w-2/3 h-[50vh] md:h-auto">
             <img
@@ -70,24 +71,24 @@ const GalleryModal: React.FC<GalleryModalProps> = ({ image, closeModal }) => {
               className="w-full h-full object-cover"
             />
           </div>
-          
+
           {/* Content */}
           <div className="md:w-1/3 p-6 overflow-y-auto">
             <span className="inline-block bg-primary-100 text-primary-700 px-2 py-1 rounded text-sm font-medium mb-3">
               {image.category}
             </span>
             <h3 className="text-2xl font-serif font-bold text-gray-800 mb-4">{image.title}</h3>
-            
+
             <div className="flex items-center text-gray-600 mb-2">
               <FaMapMarkerAlt className="mr-2 text-primary-500" />
               <span>{image.location}</span>
             </div>
-            
+
             <div className="flex items-center text-gray-600 mb-4">
               <FaCalendarAlt className="mr-2 text-primary-500" />
               <span>{new Date(image.date).toLocaleDateString()}</span>
             </div>
-            
+
             <p className="text-gray-700">{image.description}</p>
           </div>
         </motion.div>

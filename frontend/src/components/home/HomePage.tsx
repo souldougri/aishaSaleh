@@ -7,7 +7,8 @@ import GalleryPreviewSection from './GalleryPreviewSection';
 import ContactCTA from './ContactCTA';
 
 const HomePage = () => {
-  const { t } = useTranslation();
+  // Translation will be used in future updates
+  // const { t } = useTranslation();
 
   return (
     <div>

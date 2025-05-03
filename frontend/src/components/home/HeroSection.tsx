@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import PlaceholderImage from '../common/PlaceholderImage';
 
 const HeroSection = () => {
   const { t } = useTranslation();

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { FaGlobe, FaChevronDown } from 'react-icons/fa';
 
 const LanguageSwitcher = () => {
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = [

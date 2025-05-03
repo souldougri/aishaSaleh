@@ -11,6 +11,7 @@ const ResumePage = () => {
   const education = [
     {
       id: 1,
+      title: 'Master\'s in Journalism and Mass Communication',
       institution: 'University of N\'Djamena',
       degree: 'Master\'s in Journalism and Mass Communication',
       location: 'N\'Djamena, Chad',
@@ -20,6 +21,7 @@ const ResumePage = () => {
     },
     {
       id: 2,
+      title: 'Bachelor\'s in Media Studies',
       institution: 'Cairo University',
       degree: 'Bachelor\'s in Media Studies',
       location: 'Cairo, Egypt',
@@ -29,6 +31,7 @@ const ResumePage = () => {
     },
     {
       id: 3,
+      title: 'Certificate in Investigative Journalism',
       institution: 'London School of Journalism',
       degree: 'Certificate in Investigative Journalism',
       location: 'London, UK (Online)',
